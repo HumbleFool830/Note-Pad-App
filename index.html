@@ -11,7 +11,7 @@
 <body>
   <h2>Note Pad App</h2>
   <div class="setup">
-    <select class="look">
+    <select class="look" onchange="changeFont(this)">
       <option value="Arial">Arial</option>
       <option value="Sans Serif">Sans Serif</option>
       <option value="Comic Sams Ms">Comic Sams Ms</option>
@@ -43,16 +43,19 @@
       <option>28</option>
       <option>30</option>
     </select>
-    <input type="button" value="Bold" class="upper">
-    <input type="button" value="Italic" class="italic">
+    <input type="button" value="Bold" class="upper" onclick="Bold()">
+    <input type="button" value="Italic" class="italic" onclick="italic()">
     <input type="button" value="Underline" class="underline">
 
-    <textarea placeholder="Enter your text here ..." id="content" rows="20" cols="100"
+    <textarea placeholder="Enter your text here ..." id="content" rows="20" cols="100"></textarea>
 
-    </textarea>
+    <input type="reset" value="Clear">
+    <input type="button" value="Reset" class="reset">
 
   </div>
-  <script src="script.js"></script>
+  <script src="script.js">
+
+  </script>
 
 
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
